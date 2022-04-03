@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HealthConnect Past Appointments</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/a4cff998de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--HealthConnect logo!-->
+    <h1 class="pagelogo"><a href="./homepage.html">HealthConnect</a></h1>
+    <!--navigation bar!-->
+    <!--source: https://www.codecademy.com/courses/learn-css/lessons/css-typography/exercises/review!-->
+    <div>
+        <nav class='navbar'>
+            <ul>
+                <li><a href='./scheduleappointment.html'>Schedule Appointment</a></li>
+                <li class="activepage"><a  href="./upcomingappointments.html">Appointments</a></li>
+                <li><a  href='#sans'>Vaccination History</a></li>
+                <li><a  href='#mono'>Account</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--appointments page navigation bar!-->
+    <div>
+        <nav class='navbarappts'>
+            <ul>
+                <li><a href="./upcomingappointments.html">Upcoming Appointments</a></li>
+                <li class="activepage2"><a href="./pastappointments.html">Past Appointments</a></li>
+                <li><a class='canceled' href='#sans'>Canceled Appointments</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--past appointment (collapsed): covid test-->
+    <div id="allAppointments">
+        <div class="singleAppointment">
+            <i class="fas fa-regular fa-calendar-days"></i>
+            <h4>01/04/2022 @ 8:00 AM</h4>
+            <i class="fas fa-solid fa-syringe"></i>
+            <h4>COVID Test</h4>
+            <i class="fas fa-solid fa-location-dot"></i>
+            <h4>TCS Hall</h4>
+            <a class = "viewDetails" href="./pastappointments.html">View Details</a>
+        </div>
+    <!--past appointment (collapsed): vaccination-->
+        <div class="singleAppointment">
+            <i class="fas fa-regular fa-calendar-days"></i>
+            <h4>01/07/2022 @ 2:30 PM</h4>
+            <i class="fas fa-solid fa-syringe"></i>
+            <h4>Vaccination</h4>
+            <i class="fas fa-solid fa-location-dot"></i>
+            <h4>TCS Hall</h4>
+            <a class = "viewDetails" href="./pastappointments.html">View Details</a>
+        </div>
+    </div>
+</body>

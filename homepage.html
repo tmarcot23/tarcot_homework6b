@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HealthConnect Homepage</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <!--HealthConnect logo!-->
+    <h1 class="pagelogo"><a  href="./homepage.html">HealthConnect</a></h1>
+      <!--navigation bar!-->
+    <!--source: https://www.codecademy.com/courses/learn-css/lessons/css-typography/exercises/review!-->
+    <div>
+        <nav class='navbar'>
+            <ul>
+                <li><a href="./scheduleappointment.html">Schedule Appointment</a></li>
+                <li><a  href="./upcomingappointments.html">Appointments</a></li>
+                <li><a  href='#sans'>Vaccination History</a></li>
+                <li><a  href='#mono'>Account</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--CMU Picture -->
+    <div class="cmupicture">
+        <img src="cuccropped.jpg" alt="Picture of CMU's Cohon University Center"/>
+    </div>
+    <!--split screen!-->
+    <!--source: https://www.w3schools.com/howto/howto_css_split_screen.asp!-->
+    <div class="split left">
+        <div class="homepageupcomingappointments">
+            <h2>Upcoming Appointments</h2>
+        </div>
+        <div class="homepageheading homepagecovidtest">
+            <h3>Covid Test</h3>
+        </div>
+        <div class="homepagedetails homepagecovidtestdetails">
+            <h4>02/09/2022</h4>
+            <h4>9:00 AM</h4>
+            <h4>@ TCS Hall</h4>
+            <!--source for arrow: https://www.toptal.com/designers/htmlarrows/!-->
+            <p><a href="appointmentdetails2.html">&#8594</a></p>
+        </div>
+        <div class="homepageheading homepagevaccination">
+            <h3>Vaccination</h3>
+        </div>
+        <div class="homepagedetails homepagevaccinationdetails">
+            <h4>02/21/2022</h4>
+            <h4>4:30 PM</h4>
+            <h4>@ TCS Hall</h4>
+            <!--source for arrow: https://www.toptal.com/designers/htmlarrows/!-->
+            <p>&#8594</p>
+        </div>
+    </div>
+    <div class="split right">
+        <div class="quickscheduler">
+            <h2>Quick Scheduler</h2>
+        </div>
+        <div class="quickschedulerform">
+            <form id="form" action="appointmentdetails1.html">
+                <div class="quickschedulerformquestions">
+                    <label for="type">Pick an appointment type:</label>
+                        <select name="type" id="quickschedulertype">
+                            <option value="Covid Test">Covid Test</option required>
+                            <option value="Vaccination">Vaccination</option>
+                        </select>
+                </div>
+                <div class="quickschedulerformquestions">
+                    <label for="date">Pick a date:</label>
+                        <select name="date" id="quickschedulerdate">
+                            <option value="February 8">February 8</option> required
+                            <option value="February 9">February 9</option>
+                            <option value="February 11">February 11</option>
+                            <option value="February 12">February 12</option>
+                        </select>
+                </div>
+                <div class="quickschedulerformquestions">
+                    <label for="time">Pick a time:</label>
+                        <select name="time" id="quickschedulertime">
+                            <option value="8:00 AM">8:00 AM</option required>
+                            <option value="9:00 AM">9:00 AM</option>
+                            <option value="10:00 AM">10:00 AM</option>
+                            <option value="11:00 AM">11:00 AM</option>
+                            <option value="12:00 PM">12:00 PM</option>
+                            <option value="1:00 PM">1:00 PM</option>
+                            <option value="2:00 PM">2:00 PM</option>
+                            <option value="3:00 PM">3:00 PM</option>
+                            <option value="4:00 PM">4:00 PM</option>
+                        </select>
+                </div>
+                <input class="submithomepage" type="submit" onclick="formValidation()" value="Submit">
+            </form>
+            <!-- <input type="radio" id="homepagecovidbutton" name="homepagebuttons" value= "COVID Test">
+            <label for="homepagecovidbutton">COVID Test</label>
+            <input type="radio" id="homepagevaccinationbutton" name="homepagebuttons" value="Vaccination">
+            <label for="homepagevaccinationbutton">Vaccination</label> -->
+        </div>
+    </div>
+</body>

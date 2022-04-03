@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HealthConnect Appointment Details</title>
+    <link rel="stylesheet" href="style1.css">
+    <!--used icons from external site!-->
+    <!--source: https://www.w3schools.com/css/css_icons.asp!-->
+    <script src="https://kit.fontawesome.com/a4cff998de.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!--HealthConnect logo!-->
+    <h1 class="pagelogo"><a href="./homepage.html">HealthConnect</a></h1>
+    <!--navigation bar!-->
+    <!--source: https://www.codecademy.com/courses/learn-css/lessons/css-typography/exercises/review!-->
+    <div>
+        <nav class='navbar'>
+            <ul>
+                <li><a href='./scheduleappointment.html'>Schedule Appointment</a></li>
+                <li class="activepage"><a  href="./upcomingappointments.html">Appointments</a></li>
+                <li><a  href='#sans'>Vaccination History</a></li>
+                <li><a  href='#mono'>Account</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="appointmentdetailsback">
+        <!--source for arrow: https://www.toptal.com/designers/htmlarrows/!-->
+        <p><a href="./upcomingappointments.html">&#8592</a></p><p><a href="./upcomingappointments.html">Back to Appointments</a></p>
+    </div>
+    <!--appointment details!-->
+    <div class="appointmentdetails">
+        <div class="appointmentdetailsleft">
+            <div class="barcode">
+                <img src="qrcode.png" alt="Barcode"/>
+                <i class="fas fa-solid fa-arrow-down"></i>
+            </div>
+            <button type="button" class="gray button">Add to Calendar</button>
+            <button type="button" class="gray button">Reschedule</button>
+            <button type="button" id="cancelbutton" class="red button">Cancel</button>
+        </div>
+        <div id="cancelpopup" class="popup">
+            <div class="popupcontent">
+                <span class="closepopup">&times;</span>
+                <p>Are you sure you want to cancel your appointment?</p>
+                <button type="button" id="noButton" class="gray popupbutton">No</button>
+                <a id="yesButton" class="red popupbutton" href='./upcomingappointments.html'>Yes</a>
+            </div>
+        </div>
+        <div class="appointmentdetailsright">
+            <div class="detail">
+                <i class="fas fa-regular fa-calendar-days"></i>
+                <h4 id="datetime"></h4>
+            </div>
+            <div class="detail">
+                <i class="fas fa-solid fa-syringe"></i>
+                <h4 id="appttype"></h4>
+            </div>
+            <div class="detail">
+                <i class="fas fa-solid fa-location-dot"></i>
+                <h4>TCS Hall</h4>
+                <h6>4665 Forbes Ave, Pittsburgh, PA 15213</h6>
+            </div>
+            <h5>How to prepare:</h5>
+            <ul>
+                <li>Arrive within 15 minutes of your appointment</li>
+                <li>Have your appointment barcode ready upon arrival</li>
+                <li>Do not consume food or brush your teeth at least<br>an hour before your appointment</li>
+                <li>Do not drink water at least 10 minutes before<br>your appointment</li>
+            </ul>
+        </div>
+    </div>
+    <!--linked arrow/text to go back to appointments page!-->
+    <script src="appointmentdetails2.js" type="text/javascript"></script>
+</body>
+</html>

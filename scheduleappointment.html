@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>HealthConnect Homepage</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="scheduleappointment.js" type="text/javascript"></script>
+</head>
+<body>
+    <!--HealthConnect logo!-->
+    <h1 class="pagelogo"><a  href="./homepage.html">HealthConnect</a></h1>
+    <div>
+        <nav class='navbar'>
+            <ul>
+                <li class="activepage"><a href="./scheduleappointment.html">Schedule Appointment</a></li>
+                <li><a  href="./upcomingappointments.html">Appointments</a></li>
+                <li><a  href='#sans'>Vaccination History</a></li>
+                <li><a  href='#mono'>Account</a></li>
+            </ul>
+        </nav>
+    </div>
+    <form id="form" action="appointmentdetails1.html">
+
+        <!-- IGNORE FOR NOW <ul id="progressbar">
+            <li class="active">Appointment<br>Type</li>
+            <li>Appointment<br>Date and Time</li>
+            <li>Review and<br>Confirm Details</li>
+        </ul>!-->
+
+        <!-- Step 1: Select Appt Type!-->
+        <div class="tab">
+            <div class="regschedulerpickappointmenttype">
+                <h3>1. Select an appointment type:</h3>
+            </div>
+            <div class="regschedulerappointmenttypes">
+                <input type="radio" id="regschedulercovidbutton" name="schedulerbuttons" onclick="checkTypeButton()" value= "COVID Test" required>
+                <label for="regschedulercovidbutton">COVID Test</label>
+                <input type="radio" id="regschedulervaccinationbutton" name="schedulerbuttons" onclick="checkTypeButton()" value="Vaccination">
+                <label for="regschedulervaccinationbutton">Vaccination</label>
+            </div>
+        </div>
+        <hr size="3" width="100%" color="666666">
+        <div class="tab">
+            <!-- Step 2: Select Appt Date!-->
+            <div class="leftcalendar">
+            <h3>2. Select a date:</h3>
+                <div class="month">
+                    <ul>
+                        <li class="next">&#10095;</li>
+                        <li>February 2022</span></li>
+                    </ul>
+                </div>
+                <ul class="weekdays">
+                    <li>Su</li>
+                    <li>Mo</li>
+                    <li>Tu</li>
+                    <li>We</li>
+                    <li>Th</li>
+                    <li>Fr</li>
+                    <li>Sa</li>
+                </ul>
+                <ul class="days">
+                    <li id="0130">30</li>
+                    <li id="0131">31</li>
+                    <li id="0201">1</li>
+                    <li id="0202">2</li>
+                    <li id="0203">3</li>
+                    <li id="0204">4</li>
+                    <li id="0205">5</li>
+                    <li id="0206">6</li>
+                    <li id="0207"><span class="active">7</span></li>
+                    <div class="day">
+                        <div class="single">
+                            <input type="radio" id="0208" name="selectiondate" onclick="checkDateButton()" value= "Febuary 8, 2022" required>
+                            <label class="singlelabel" for="0208">8</label>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="single">
+                            <input type="radio" id="0209" name="selectiondate" onclick="checkDateButton()" value= "February 9, 2022">
+                            <label class="singlelabel" for="0209">9</label>
+                        </div>
+                    </div>
+                    <li id="0210">10</li>
+                    <div class="day">
+                        <div class="double">
+                            <input type="radio" id="0211" name="selectiondate" onclick="checkDateButton()" value= "February 11, 2022">
+                            <label class="doublelabel" for="0211">11</label>
+                        </div>
+                    </div>
+                    <div class="day">
+                        <div class="double">
+                            <input type="radio" id="0212" name="selectiondate" onclick="checkDateButton()" value= "February 12, 2022">
+                            <label class="doublelabel" for="0212">12</label>
+                        </div>
+                    </div>
+                    <li id="0213">13</li>
+                    <li id="0214">14</li>
+                    <li id="0215">15</li>
+                    <li id="0216">16</li>
+                    <li id="0217">17</li>
+                    <li id="0218">18</li>
+                    <li id="0219">19</li>
+                    <li id="0220">20</li>
+                    <li id="0221">21</li>
+                    <li id="0222">22</li>
+                    <li id="0223">23</li>
+                    <li id="0224">24</li>
+                    <li id="0225">25</li>
+                    <li id="0226">26</li>
+                    <li id="0227">27</li>
+                    <li id="0228">28</li>
+                </ul>
+            </div>
+            <div class="righttimes">
+            <!-- Step 3: Select Appt Time!-->
+            <h3>3. Select a time (EST):</h3>
+                <div class="times">
+                    <div class="am">
+                        <input type="radio" id="800" name="selectiontime" onclick="checkTimeButton()" value= "8:00 AM" required>
+                        <label for="800">8:00 AM</label>
+                        <input type="radio" id="900" name="selectiontime" onclick="checkTimeButton()" value= "9:00 AM">
+                        <label for="900">9:00 AM</label>
+                        <input type="radio" id="1000" name="selectiontime" onclick="checkTimeButton()" value= "10:00 AM">
+                        <label for="1000">10:00 AM</label>
+                        <input type="radio" id="1100" name="selectiontime" onclick="checkTimeButton()" value= "11:00 AM">
+                        <label for="1100">11:00 AM</label>
+                    </div>
+                    <div class="pm">
+                        <input type="radio" id="1200" name="selectiontime" onclick="checkTimeButton()" value= "12:00 PM">
+                        <label for="1200">12:00 PM</label>
+                        <input type="radio" id="100" name="selectiontime" onclick="checkTimeButton()" value= "1:00 PM">
+                        <label for="100">1:00 PM</label>
+                        <input type="radio" id="200" name="selectiontime" onclick="checkTimeButton()" value= "2:00 PM">
+                        <label for="200">2:00 PM</label>
+                        <input type="radio" id="300" name="selectiontime" onclick="checkTimeButton()" value= "3:00 PM">
+                        <label for="300">3:00 PM</label>
+                        <input type="radio" id="400" name="selectiontime" onclick="checkTimeButton()" value= "4:00 PM">
+                        <label for="400">4:00 PM</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr size="3" width="100%" color="666666">
+
+        <!-- IGNORE FOR NOW <div style="overflow:auto;">
+            <div class="actionbuttons">
+                <button type="button" id="backbutton" class="back actionbutton" onclick="nextPrev(-1)">Back</button>
+                <button type="button" id="continuebutton" class="continue actionbutton" onclick="nextPrev(1)">Continue</button>
+            </div>
+        </div>!-->
+
+        <!-- Step 4: Review Details!-->
+        <div class="tab">
+            <div class="reviewheading">
+                 <h3>4. Review appointment details:</h3>
+            </div>
+            <div class="review">
+                <div class="category type">
+                    <h3>Type</h3>
+                    <h4 id="categorytype">Please make a selection</h4>
+                </div>
+                <div class="category date">
+                    <h3>Date</h3>
+                    <h4 id="categorydate">Please make a selection</h4>
+                </div>
+                <div class="category time">
+                    <h3>Time</h3>
+                    <h4 id="categorytime">Please make a selection</h4>
+                </div>
+                <div class="category location">
+                    <h3>Location</h3>
+                    <h4>TCS Hall</h4>
+                    <h5>4665 Forbes Ave, Pittsburgh, PA 15213</h5>
+                </div>
+            </div>
+        </div>
+        <input class="submit" type="submit" onclick="formValidation()" value="Submit">
+    </form>
+</body>
+</html>
