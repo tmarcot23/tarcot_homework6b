@@ -1,4 +1,3 @@
-// check if local storage exisits first
 if (localStorage.appointments)
 {   var appointmentParsed = JSON.parse(localStorage.getItem('appointments'));
     for (var n of appointmentParsed) {
