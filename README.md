@@ -1,6 +1,6 @@
 # tarcot_homework6b
 
-In Assignment 6B, I fininished building out the appointment scheduling, upcoming appointments, and homepage pages. In this README file, I will be detailing the function of each file.
+In Assignment 6B, I finished building out the appointment scheduling, upcoming appointments, and homepage pages. In this README file, I will be detailing the function of each file.
 
 Assets folder: The assets folder contains two images, which is the individual appointment barcode and the picture of CMU on the homepage
 
