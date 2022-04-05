@@ -1,4 +1,4 @@
-/*code for removing right side white space*/
+/*removing right side white space*/
 /*source: ;https://www.codegrepper.com/code-examples/css/how+to+remove+white+space+in+the+right+side+of+web+page*/
 html,body {
     margin:0;
@@ -6,7 +6,7 @@ html,body {
     overflow-x:hidden;
 }
 
-/*code for login page*/
+/*login page*/
 .loginbutton {
   background: #bb0000;
   border: 1px #bb0000;
@@ -63,7 +63,7 @@ label {
   justify-content: center;
 }
 
-/*general code HealthConnect logo*/
+/*HealthConnect logo*/
 .pagelogo {
   color: #bb0000;
   background: white;
@@ -82,13 +82,7 @@ label {
   color: #bb0000;
 }
 
-/*code for homepage*/
-.cmupicture img{
-  width: 100%;
-  margin-bottom: -4px;
-}
-
-/*general navbar for all pages*/
+/*navbar for all pages*/
 /*source: https://www.codecademy.com/courses/learn-css/lessons/css-typography/exercises/review*/
 .navbar {
   width: 100%;
@@ -135,8 +129,12 @@ label {
   margin-right: -40px;
 }
 
-/*code homepage*/
-/*some code for splitting the homepage screen shown below*/
+/*homepage*/
+.cmupicture img{
+  width: 100%;
+  margin-bottom: -4px;
+}
+/*splitting the homepage screen/
 /*source:  https://www.w3schools.com/howto/howto_css_split_screen.asp*/
 .split {
   width: 50%;
@@ -232,7 +230,7 @@ label {
 .submithomepage {
   background: #bb0000;
   border: 1px #bb0000;
-  border-radius: 10px;
+  border-radius: 3px;
   display: block;
   font-family: 'Open Sans', sans-serif;
   text-align: center;
@@ -245,33 +243,7 @@ label {
   color: white;
 }
 
-/*.quickschedulerappointmenttypes label {
-  font-family: 'Open Sans', sans-serif;
-  text-align: center;
-  font-size: 20px;
-  padding: 10px 10px;
-  color: black;
-  margin-left: auto;
-  margin-right: auto;
-  background: #e0e0e0;
-  width: 200px;
-  border-radius: 20px;
-  display: block;
-  margin-bottom: 30px;
-}
-
-.quickschedulerappointmenttypes input[type="radio"] {
-  opacity: 0;
-  position: fixed;
-  width: 0;
-}
-
-.quickschedulerappointmenttypes input[type="radio"]:checked + label {
-    background-color:#bb0000;
-    color: white;
-}*/
-
-/*code for upcoming and past appointments pages*/
+/*upcoming and past appointments pages*/
 .navbarappts {
   width: 100%;
   margin-top: 30px;
@@ -391,7 +363,7 @@ label {
   color: black;
 }
 
-/*code for appointment details page*/
+/*appointment details pages*/
 .appointmentdetails {
   width: 70%;
   border-style: solid;
@@ -521,7 +493,7 @@ label {
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
 
-/* Modal Content/Box */
+/*cancel appointment modal*/
 .popupcontent {
   background-color: #fefefe;
   margin: 20% auto; /* 15% from the top and centered */
@@ -541,7 +513,6 @@ label {
   text-decoration: none;
 }
 
-/* The Close Button */
 .closepopup {
   color: #aaa;
   float: right;
@@ -564,8 +535,17 @@ label {
   margin-right: 20px;
 }
 
-/* Appointment Scheduling Page*/
+/*appointment scheduling page*/
 
+/*step 1: type*/
+.regschedulerpickappointmenttype {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  color: black;
+}
 .regschedulerappointmenttypes {
   margin-bottom: 50px;
 }
@@ -596,6 +576,7 @@ label {
     color: white;
 }
 
+/*step 2: calendar*/
 .month {
   padding: 15px 25px;
   width: 30.35%;
@@ -622,13 +603,11 @@ label {
   font-weight: bold;
 }
 
-/* Next button */
 .month .next {
   float: right;
   padding-top: 10px;
 }
 
-/* Weekdays (Mon-Sun) */
 .weekdays {
   margin-top: 0;
   margin-bottom: 0;
@@ -733,6 +712,16 @@ label {
   margin-left: 15px;
 }
 
+.leftcalendar h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: black;
+  margin-top: 60px;
+  margin-bottom: -60px;
+  margin-left: 75px;
+}
+
+/*step 3: times*/
 .times {
   float: right;
   margin-top: -30px;
@@ -749,21 +738,6 @@ label {
   font-size: 16px;
   font-weight: bold;
   margin: 60px 10px;
-}
-
-.continue {
-  color: white;
-  background: #bb0000;
-}
-
-.back {
-  color: black;
-  background: #c4c4c4;
-}
-
-.actionbuttons {
-  display: flex;
-  justify-content: center;
 }
 
 .times label {
@@ -806,10 +780,20 @@ label {
   margin-bottom: 60px;
 }
 
+.righttimes h3 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  color: black;
+  margin-left: 20px;
+  margin-top: -20px;
+  margin-bottom: 20px;
+}
+
 .hr {
   margin-bottom: 100px;
 }
 
+/*step 4: review*/
 .review {
   display: block;
   text-align: center;
@@ -817,6 +801,16 @@ label {
   margin-right: auto;
   margin-bottom: 60px;
   font-family: 'Open Sans', sans-serif;
+}
+
+.reviewheading {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  color: black;
+  margin-left: -275px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  text-align: center;
 }
 
 .review h3 {
@@ -842,6 +836,7 @@ label {
   width: 40%;
 }
 
+/*submit form*/
 .submit {
   background: #bb0000;
   border: 1px #bb0000;
@@ -856,42 +851,4 @@ label {
   margin-bottom: 30px;
   font-size: 20px;
   color: white;
-}
-
-.regschedulerpickappointmenttype {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  margin-top: 50px;
-  margin-bottom: 30px;
-  text-align: center;
-  color: black;
-}
-
-
-.leftcalendar h3 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  color: black;
-  margin-top: 60px;
-  margin-bottom: -60px;
-  margin-left: 75px;
-}
-
-.righttimes h3 {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 18px;
-  color: black;
-  margin-left: 20px;
-  margin-top: -20px;
-  margin-bottom: 20px;
-}
-
-.reviewheading {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 16px;
-  color: black;
-  margin-left: -275px;
-  margin-top: 60px;
-  margin-bottom: 20px;
-  text-align: center;
 }

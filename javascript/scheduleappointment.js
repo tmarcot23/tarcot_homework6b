@@ -1,3 +1,4 @@
+//get type value for review section
 function checkTypeButton() {
     var getSelectedValue = document.querySelector('input[name="schedulerbuttons"]:checked');
     if(getSelectedValue != null) {
@@ -9,6 +10,7 @@ function checkTypeButton() {
     }
 }
 
+//get date value for review section and validate type selection
 function checkDateButton() {
     var getSelectedValue = document.querySelector('input[name="selectiondate"]:checked');
     if((getSelectedValue != null) && (checkTypeButton() == true)) {
@@ -24,6 +26,7 @@ function checkDateButton() {
     }
 }
 
+//get time value for review section and validate type and date sections
 function checkTimeButton() {
     var getSelectedValue = document.querySelector('input[name="selectiontime"]:checked');
     if((getSelectedValue != null) && (checkDateButton() == true) && (checkTypeButton()==true)) {
@@ -42,11 +45,10 @@ function checkTimeButton() {
       return false
     }
 }
-
-
 var appointments = []
 var appointmentsLocal =[];
 
+//validate form, submit, and store values to local storage
 function formValidation() {
   if((checkTypeButton()==false) || (checkDateButton()==false)  || (checkTimeButton()==false)) {
     alert("Please fill out all fields");

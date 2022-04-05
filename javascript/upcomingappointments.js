@@ -1,3 +1,4 @@
+    //loop through "appointments" array to make HTML for new appointment on upcoming appointments page
      var appointmentsParsed = JSON.parse(localStorage.getItem('appointments'));
     for (var i = 0; i < appointmentsParsed.length; i++) {
 
@@ -41,36 +42,9 @@
         viewDetails.href = "./appointmentdetails2.html";
         viewDetails.addEventListener("click", () => {
                     let appointment = n;
-            //  console.log(appointmentParsed[i]);
-    // save appointment
                     localStorage.setItem('appointment', JSON.stringify(appointment));
         })
-//        viewDetails.onclick = clickDetails(n);
-//            console.log(n);
         singleAppointment.appendChild(viewDetails);
 
         allAppointments.appendChild(singleAppointment);
     }
-
-
- /*   function clickDetails(n) {
-        let appointment = {
-            currentdate: n.date,
-            currenttime: n.time,
-            currenttype: n.type
-        }
-   console.log(appointment)
-   return true
-}*/
-
-
-/*function clickDetails(n) {
-    let appointment = appointmentParsed[i];
-    console.log(appointmentParsed[i]);
-    // save appointment
-    localStorage.setItem('appointment', JSON.stringify(appointment));
- //   console.log(appointment)
-    return true
-    }
-
-console.log(appointmentParsed[i]);*/

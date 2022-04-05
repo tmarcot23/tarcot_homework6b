@@ -1,3 +1,4 @@
+//display appointment details on details page
 if (localStorage.appointments)
 {   var appointmentParsed = JSON.parse(localStorage.getItem('appointments'));
     for (var n of appointmentParsed) {
